@@ -1,6 +1,6 @@
 package Ejercicios;
 
-/*hola*/
+/*hola 2222*/
 public class Jugador {
 
 	private int vida;
