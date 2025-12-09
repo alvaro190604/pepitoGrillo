@@ -1,5 +1,6 @@
 package Ejercicios;
 
+/*hola*/
 public class Jugador {
 
 	private int vida;
