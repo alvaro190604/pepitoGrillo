@@ -39,6 +39,19 @@ public class MainCuentaEj11 {
 			if (divisaActual == '$') {
 				System.out.println("Error");
 			} else {
+				
+				
+				/*
+				 * System.out.println("El valor actual es: " + cuenta.getDinero() + " va a pasar a ser: "  + cuenta.pasarAEuros());
+				 * System.out.println("Desea realizar la conversión?");
+				 *	cambiar = teclado.nextBoolean();
+				 * if (cambiar == true) {
+						cuenta.setDivisa('$');
+						cuenta.setDinero(cuenta.pasarAEuros())
+					} else {
+						cuenta.setDinero(aux);
+					}
+				 * */
 				cuenta.pasarADolares();
 				System.out.println(cuenta.getDinero());
 				System.out.println("Desea realizar la conversión?");

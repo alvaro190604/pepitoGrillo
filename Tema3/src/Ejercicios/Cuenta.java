@@ -13,7 +13,7 @@ public class Cuenta {
 	}
 	
 	public double getDinero() {
-		return dinero;
+		return this.dinero;
 	}
 
 	public void setDinero(double dinero) {
@@ -50,6 +50,22 @@ public class Cuenta {
 		}
 	}
 	
+	/*
+	 * 
+	 * public double pasarAEuros () {
+		
+		if(divisa == '€') {
+			return this.dinero
+		}else if(divisa == 'L') {
+			return (this.dinero * 1.15) - ((this.dinero * 0.5) / 100);
+		}else {
+			return(this.dinero * 0.86) - ((this.dinero * 0.5) / 100);
+		}
+	}
+	 * 
+	 * 
+	 * */
+
 	public void pasarALibras () {
 		
 		if(divisa == '€') {

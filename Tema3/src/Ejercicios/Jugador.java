@@ -1,13 +1,12 @@
 package Ejercicios;
 
-/*hola 2222*/
 public class Jugador {
 
 	private int vida;
 	private String nombre;
 
 	public Jugador(String nombre) {
-		vida = 100;
+		this.vida = 100;
 		this.nombre = nombre;
 	}
 
@@ -20,7 +19,7 @@ public class Jugador {
 	}
 
 	public void imprimirVidaRestante() {
-		System.out.println("Vida " + nombre + " = " + vida);
+		System.out.println(nombre + " : " + vida + " puntos de vida");
 	}
 
 	public boolean haPerdidio() {
