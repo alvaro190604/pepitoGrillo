@@ -9,13 +9,11 @@ public class Punto {
 		this.y = 5;
 	}
 
- 	
-	/*
-	 * public Punto (int x, int y) {
+	public Punto(int x, int y) {
 		this.x = x;
 		this.y = y;
 	}
-	 * */
+
 	public int getX() {
 		return x;
 	}
@@ -36,6 +34,5 @@ public class Punto {
 	public String toString() {
 		return "POSICIÓN (" + this.x + "," + this.y + ")";
 	}
-	
-}
 
+}
