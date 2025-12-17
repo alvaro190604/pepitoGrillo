@@ -9,7 +9,7 @@ public class MainComprobarDNIEj14 {
 		Scanner teclado = new Scanner(System.in);
 		int opcion;
 
-		Usuario cuenta = new Usuario("Marcos", "89262718A", "Salamanca", 2000);
+		ComprobarDNI cuenta = new ComprobarDNI("Marcos", "70849700V", "Salamanca", 2000);
 
 		do {
 			System.out.println("----MENÚ----");
@@ -19,6 +19,7 @@ public class MainComprobarDNIEj14 {
 			System.out.println("3) Ingresar");
 			System.out.println("4) Sacar dinero");
 			System.out.println("5) Modificar domicilio");
+			System.out.println("6) Comprobar DNI");
 
 			System.out.println("Introduzca la opción deseada: ");
 			opcion = teclado.nextInt();
@@ -59,6 +60,20 @@ public class MainComprobarDNIEj14 {
 				System.out.println("Introduzca su nueva dirección");
 				String direccionNueva = teclado.nextLine();
 				cuenta.setDomicilio(direccionNueva);
+				break;
+
+			case 6:
+				if (cuenta.comprobarDNI1()) {
+					System.out.print("El DNI es verdadero");
+				} else {
+					System.out.print("El DNI es falso");
+				}
+				if (cuenta.comprobarDNI2()) {
+					System.out.print(", es correcto.");
+				} else {
+					System.out.print(", es incorrecto.");
+				}
+				System.out.println("");
 				break;
 
 			default:
