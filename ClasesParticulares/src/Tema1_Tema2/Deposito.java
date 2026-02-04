@@ -24,9 +24,9 @@ public class Deposito {
 	
 	private void modificarCantidad (int litros) {
 		
-		if (operativo = true && litros > 0 && cantidadActual <= capacidadMax) {
+		if (operativo = true && litros > 0 && (cantidadActual + litros) <= capacidadMax) {
 			cantidadActual = cantidadActual + litros;
-		} else if (operativo = true && litros < 0 && cantidadActual <= litros) {
+		} else if (operativo = true && litros < 0 && (cantidadActual - litros) >= 0) {
 			cantidadActual = cantidadActual - litros;
 		}	
 	}

@@ -2,9 +2,9 @@ package Tema1_Tema2;
 
 public class Libro {
 	
-	String titulo;
-	String autor;
-	boolean prestado;
+	private String titulo;
+	private String autor;
+	private boolean prestado;
 	
 	public Libro() {
 		this.titulo = "Romeo y Julieta";
@@ -19,29 +19,34 @@ public class Libro {
 		this.prestado = prestado;
 	}
 	
-	private void prestarLibro () {
+	public void prestarLibro () {
 		
-		if (prestado = false) {
+		if (prestado == false) {
 			prestado = true;
 		}
 		
 	}
 	
-	private void devolverLibro () {
+	public void devolverLibro () {
 		
 		prestado = false;
 		
 	}
 	
-	private void estadoLibro () {
+	public void estadoLibro () {
 		
-		if (prestado = true) {
+		if (prestado == true) {
 			System.out.println("El libro está prestado");
 		}
 		else {
 			System.out.println("El libro está disponible");
 		}
 		
+	}
+
+	@Override
+	public String toString() {
+		return "Libro [titulo=" + titulo + ", autor=" + autor + ", prestado=" + prestado + "]";
 	}
 	
 }
